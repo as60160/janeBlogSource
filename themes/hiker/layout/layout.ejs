@@ -9,7 +9,7 @@
   <% if (is_home() && theme.home_background_image.enable){ %>
     <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
   <% } %>
-  <div id="container" class="<%= page.custom === false ? 'custom' : ''  %>">
+  <div id="container" class="<%= page.custom ? 'custom' : ''  %>">
     <div id="wrap">
       <% if (!is_home() || !theme.home_background_image.enable){ %>
         <%- partial('_partial/header-post') %>
